@@ -1,6 +1,6 @@
 # Cockatrice_MTG_Translate_CardDescription
 
-Este projeto automatiza a tradução dos textos das cartas do jogo **Magic: The Gathering**, no formato utilizado pelo Cockatrice (`cards.xml`). O script usa a API pública do Google Tradutor, com suporte a um sistema de cache e substituição inteligente de termos técnicos.
+Este projeto automatiza a tradução dos textos das cartas do jogo **Magic: The Gathering**, no formato utilizado pelo **Cockatrice** (`cards.xml`). O script usa a API pública do Google Tradutor, com suporte a um sistema de cache e substituição inteligente de termos técnicos.
 
 ## 🧠 Objetivo
 
