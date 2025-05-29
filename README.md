@@ -1,13 +1,17 @@
 # Cockatrice_MTG_Translate_CardDescription
 
-Este projeto automatiza a tradução dos textos das cartas do jogo **Magic: The Gathering**, no formato utilizado pelo **Cockatrice** (`cards.xml`). O script usa a API pública do Google Tradutor, com suporte a um sistema de cache e substituição inteligente de termos técnicos.
+Sou iniciante no Magic, e ler o que carta faz as vezes pode parece muito complexo pra mim, então resolvi desenvolver este projeto.
+Este projeto automatiza a tradução dos textos das cartas na descrição, do jogo **Magic: The Gathering**, no formato utilizado pelo **Cockatrice** (`cards.xml`). O script usa a API pública do Google Tradutor, com suporte a um sistema de cache e substituição inteligente de termos técnicos.
 
 ## 🧠 Objetivo
 
-- Traduzir os textos das cartas do inglês para o português com consistência.
+- Traduzir na descrição os textos das cartas do inglês para o português com consistência.
 - Evitar erros comuns de tradução automática com termos próprios do MTG (ex: "Flying" → "voar").
 - Utilizar cache para evitar retraduções e reduzir uso de API.
 - Manter o formato XML original para uso direto no Cockatrice.
+
+![20250529-080616-001](https://github.com/user-attachments/assets/9d40a74d-9980-4d98-85a0-d930d50bfae0)
+
 
 ## 🛠️ Como funciona
 
@@ -34,6 +38,8 @@ Este projeto automatiza a tradução dos textos das cartas do jogo **Magic: The 
 
 4. Execute o script:
 python traduzir_cards.py
+
+5.   O script gerará o arquivo de saída na pasta Traduzido/ com o nome cards_traduzido.xml, renomeie este arquivo para o nome original cards.xml e substitua na pasta C:\Users\[USUARIO]\AppData\Local\Cockatrice\Cockatrice
 
 ## ⚠️ Observações
 * O cache (cache_traducao.json) evita retraduções e acelera o processo. Deixei um cache já no projeto com as traduções em PT-BR.
