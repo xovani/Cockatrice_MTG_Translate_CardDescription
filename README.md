@@ -28,25 +28,24 @@ Este projeto automatiza a tradução dos textos das cartas do jogo **Magic: The 
 2. Instale as dependências:
    pip install googletrans==4.0.0-rc1
 
-3.Coloque o arquivo cards.xml original na pasta Base/.
+3. Coloque o arquivo cards.xml original na pasta Base/.
 
-4.Execute o script:
+4. Execute o script:
 python traduzir_cards.py
 
 
 
-
-⚠️ Observações
+## ⚠️ Observações
 O cache (cache_traducao.json) evita retraduções e acelera o processo.
 
 Pequenos delays são aplicados para evitar bloqueio pela API.
 
 O script respeita o layout XML original do Cockatrice.
 
-🧠 Contribuições
+## 🧠 Contribuições
 Sugestões, melhorias ou correções são bem-vindas! Abra uma issue ou envie um Pull Request.
 
-📄 Licença
+## 📄 Licença
 Este projeto está sob a licença MIT. Veja o arquivo LICENSE para mais detalhes.
 
 
