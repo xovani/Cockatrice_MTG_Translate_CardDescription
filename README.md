@@ -43,7 +43,8 @@ python traduzir_cards.py
 * O script respeita o layout XML original do Cockatrice.
 
 * Se você entende um pouco de Python pode utilizar para qualquer idioma, basta alterar a função traduzir_texto:
-   def traduzir_texto(texto):
+
+  def traduzir_texto(texto):
     try:
         resultado = translator.translate(texto, src='en', dest='pt')
         return resultado.text
