@@ -19,28 +19,38 @@ Este projeto automatiza a tradução dos textos das cartas do jogo **Magic: The 
 6. Salva o novo XML traduzido em `Traduzido/cards_traduzido.xml`.
 
 ## ▶️ Como usar
+0. Instale o Python em seu sistema operacional.
 
-1. Clone este repositório:
+1. Instale as dependências:
+   pip install googletrans==4.0.0-rc1
+
+2. Clone este repositório:
    ```bash
    git clone https://github.com/seu-usuario/Cockatrice_MTG_Translate_CardDescription.git
    cd Cockatrice_MTG_Translate_CardDescription
 
-2. Instale as dependências:
-   pip install googletrans==4.0.0-rc1
-
 3. Coloque o arquivo cards.xml original na pasta Base/.
+   Geralmente no Cockatrice este arquivos esta na pasta: C:\Users\[USUARIO]\AppData\Local\Cockatrice\Cockatrice
 
 4. Execute o script:
 python traduzir_cards.py
 
-
-
 ## ⚠️ Observações
-O cache (cache_traducao.json) evita retraduções e acelera o processo.
+* O cache (cache_traducao.json) evita retraduções e acelera o processo. Deixei um cache já no projeto com as traduções em PT-BR.
 
-Pequenos delays são aplicados para evitar bloqueio pela API.
+* Pequenos delays são aplicados para evitar bloqueio pela API.
 
-O script respeita o layout XML original do Cockatrice.
+* O script respeita o layout XML original do Cockatrice.
+
+* Se você entende um pouco de Python pode utilizar para qualquer idioma, basta alterar a função traduzir_texto:
+   def traduzir_texto(texto):
+    try:
+        resultado = translator.translate(texto, src='en', dest='pt')
+        return resultado.text
+    except Exception as e:
+        raise Exception(f"Erro ao traduzir com Google: {e}")
+
+  *** Caso for alterar o arquivo de cache atual deverá ser excluído para o script criar uma base nova na sua lingua.
 
 ## 🧠 Contribuições
 Sugestões, melhorias ou correções são bem-vindas! Abra uma issue ou envie um Pull Request.
