@@ -1,0 +1,1 @@
+# Cockatrice_MTG_Translate_CardDescription
