@@ -59,7 +59,7 @@ python traduzir_cards.py
 
   *** Caso for alterar o arquivo de cache atual deverá ser excluído para o script criar uma base nova na sua lingua.
 
-* Cokactrice Project - https://github.com/Cockatrice/Cockatrice
+* Cockatrice Project - https://github.com/Cockatrice/Cockatrice
 * https://cockatrice.github.io/
 
 ## 🧠 Contribuições
