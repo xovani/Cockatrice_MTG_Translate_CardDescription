@@ -23,6 +23,22 @@ Este projeto automatiza a tradução dos textos das cartas na descrição, do jo
 6. Salva o novo XML traduzido em `Traduzido/cards_traduzido.xml`.
 
 ## ▶️ Como usar
+
+### 🔰 Opção 1 - Para usuários iniciantes (executável)
+
+1. Baixe o **.ZIP com a estrutura completa** na [seção de releases do projeto](https://github.com/seu-usuario/Cockatrice_MTG_Translate_CardDescription/releases).
+2. Extraia o conteúdo do `.zip` em uma pasta de sua preferência.
+3. Copie o arquivo `cards.xml` original do Cockatrice para a **pasta `Base/`** (ela já estará criada).
+   - Caminho padrão do arquivo no Windows:
+     ```
+     C:\Users\[SEU_USUÁRIO]\AppData\Local\Cockatrice\Cockatrice
+     ```
+4. Execute o arquivo `traduzir_cards.exe` com **duplo clique**.
+5. O arquivo traduzido será salvo na pasta `Traduzido/` com o nome `cards_traduzido.xml`.
+6. Renomeie para `cards.xml` e substitua o original no diretório do Cockatrice.
+
+### ⚙️ Opção 2 - Para usuários avançados (código aberto)
+
 0. Instale o Python em seu sistema operacional.
 
 1. Instale as dependências:
