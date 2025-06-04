@@ -30,10 +30,12 @@ Este projeto automatiza a tradução dos textos das cartas na descrição, do jo
 2. Extraia o conteúdo do `.zip` em uma pasta de sua preferência.
 3. Execute o arquivo `Traduzir_Cards_v1.2.exe` com **duplo clique**.
 4. Após abrir a janela clique Iniciar Tradução, aguarde o processo ser concluído, você poderá acompanhar na janela de log.
+   
    ![20250604-160933-002](https://github.com/user-attachments/assets/058ce7f7-8a3d-421d-ab54-86a29affbe67)
 
 5. Após a conclusão uma mensagem será apresentada na tela, dê OK, depois fechar.
 6. Será gerado um backup automatico do seu banco de cartas em inglês caso queira reverter o processo cards_en.xml. Caso queira reverter basta deletar o arquivo cards.xml e renomear o arquivo cards_en.xml para o nome original.
+   
 ![20250604-161636-003](https://github.com/user-attachments/assets/d676c334-934c-47d7-8c8b-8413e671d67c)
 
 7. Reinicie ou Inicie seu Cockatrice. Aproveite.
@@ -54,10 +56,12 @@ Este projeto automatiza a tradução dos textos das cartas na descrição, do jo
 python Traduzir_Cards_v1.2.py
 
 4. Após abrir a janela clique Iniciar Tradução, aguarde o processo ser concluído, você poderá acompanhar na janela de log.
+   
    ![20250604-160933-002](https://github.com/user-attachments/assets/058ce7f7-8a3d-421d-ab54-86a29affbe67)
 
 5. Após a conclusão uma mensagem será apresentada na tela, dê OK, depois fechar.
 6. Será gerado um backup automatico do seu banco de cartas em inglês caso queira reverter o processo cards_en.xml. Caso queira reverter basta deletar o arquivo cards.xml e renomear o arquivo cards_en.xml para o nome original.
+   
 ![20250604-161636-003](https://github.com/user-attachments/assets/d676c334-934c-47d7-8c8b-8413e671d67c)
 
 7. Reinicie ou Inicie seu Cockatrice. Aproveite.
