@@ -28,14 +28,15 @@ Este projeto automatiza a tradução dos textos das cartas na descrição, do jo
 
 1. Baixe o **.ZIP com a estrutura completa** na [seção de releases do projeto](https://github.com/xovani/Cockatrice_MTG_Translate_CardDescription/releases).
 2. Extraia o conteúdo do `.zip` em uma pasta de sua preferência.
-3. Copie o arquivo `cards.xml` original do Cockatrice para a **pasta `Base/`** (ela já estará criada).
-   - Caminho padrão do arquivo no Windows:
-     ```
-     C:\Users\[SEU_USUÁRIO]\AppData\Local\Cockatrice\Cockatrice
-     ```
-4. Execute o arquivo `traduzir_cards.exe` com **duplo clique**.
-5. O arquivo traduzido será salvo na pasta `Traduzido/` com o nome `cards_traduzido.xml`.
-6. Renomeie para `cards.xml` e substitua o original no diretório do Cockatrice.
+3. Execute o arquivo `Traduzir_Cards_v1.2.exe` com **duplo clique**.
+4. Após abrir a janela clique Iniciar Tradução, aguarde o processo ser concluído, você poderá acompanhar na janela de log.
+   ![20250604-160933-002](https://github.com/user-attachments/assets/058ce7f7-8a3d-421d-ab54-86a29affbe67)
+
+5. Após a conclusão uma mensagem será apresentada na tela, dê OK, depois fechar.
+6. Será gerado um backup automatico do seu banco de cartas em inglês caso queira reverter o processo cards_en.xml. Caso queira reverter basta deletar o arquivo cards.xml e renomear o arquivo cards_en.xml para o nome original.
+![20250604-161636-003](https://github.com/user-attachments/assets/d676c334-934c-47d7-8c8b-8413e671d67c)
+
+7. Reinicie ou Inicie seu Cockatrice. Aproveite.
 
 ### ⚙️ Opção 2 - Para usuários avançados (código aberto)
 
@@ -43,19 +44,23 @@ Este projeto automatiza a tradução dos textos das cartas na descrição, do jo
 
 1. Instale as dependências:
    pip install googletrans==4.0.0-rc1
-
+   
 2. Clone este repositório:
    ```bash
    git clone https://github.com/seu-usuario/Cockatrice_MTG_Translate_CardDescription.git
    cd Cockatrice_MTG_Translate_CardDescription
 
-3. Coloque o arquivo cards.xml original na pasta Base/.
-   Geralmente no Cockatrice este arquivos esta na pasta: C:\Users\[USUARIO]\AppData\Local\Cockatrice\Cockatrice
+3. Execute o script:
+python Traduzir_Cards_v1.2.py
 
-4. Execute o script:
-python traduzir_cards.py
+4. Após abrir a janela clique Iniciar Tradução, aguarde o processo ser concluído, você poderá acompanhar na janela de log.
+   ![20250604-160933-002](https://github.com/user-attachments/assets/058ce7f7-8a3d-421d-ab54-86a29affbe67)
 
-5.   O script gerará o arquivo de saída na pasta Traduzido/ com o nome cards_traduzido.xml, renomeie este arquivo para o nome original cards.xml e substitua na pasta C:\Users\[USUARIO]\AppData\Local\Cockatrice\Cockatrice
+5. Após a conclusão uma mensagem será apresentada na tela, dê OK, depois fechar.
+6. Será gerado um backup automatico do seu banco de cartas em inglês caso queira reverter o processo cards_en.xml. Caso queira reverter basta deletar o arquivo cards.xml e renomear o arquivo cards_en.xml para o nome original.
+![20250604-161636-003](https://github.com/user-attachments/assets/d676c334-934c-47d7-8c8b-8413e671d67c)
+
+7. Reinicie ou Inicie seu Cockatrice. Aproveite.
 
 ## ⚠️ Observações
 * O cache (cache_traducao.json) evita retraduções e acelera o processo. Deixei um cache já no projeto com as traduções em PT-BR.
