@@ -26,7 +26,7 @@ Este projeto automatiza a tradução dos textos das cartas na descrição, do jo
 
 ### 🔰 Opção 1 - Para usuários iniciantes (executável)
 
-1. Baixe o **.ZIP com a estrutura completa** na [seção de releases do projeto](https://github.com/seu-usuario/Cockatrice_MTG_Translate_CardDescription/releases).
+1. Baixe o **.ZIP com a estrutura completa** na [seção de releases do projeto](https://github.com/xovani/Cockatrice_MTG_Translate_CardDescription/releases).
 2. Extraia o conteúdo do `.zip` em uma pasta de sua preferência.
 3. Copie o arquivo `cards.xml` original do Cockatrice para a **pasta `Base/`** (ela já estará criada).
    - Caminho padrão do arquivo no Windows:
