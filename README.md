@@ -15,12 +15,13 @@ Este projeto automatiza a tradução dos textos das cartas na descrição, do jo
 
 ## 🛠️ Como funciona
 
-1. Lê o arquivo XML de cartas localizado em `Base/cards.xml`.
+1. Lê o arquivo XML de cartas localizado na sua pasta do Cockatrice.
 2. Substitui termos técnicos por marcadores temporários.
 3. Usa o Google Tradutor para traduzir o texto completo.
 4. Reinsere os termos técnicos traduzidos no lugar correto.
 5. Atualiza o cache (`cache_traducao.json`) para otimizar execuções futuras.
-6. Salva o novo XML traduzido em `Traduzido/cards_traduzido.xml`.
+6. Salva o novo XML traduzido diretamente na sua pasta do Cockatrice.
+7. Deixa um backup do seu banco de cartas caso queira reverter o processo.
 
 ## ▶️ Como usar
 
